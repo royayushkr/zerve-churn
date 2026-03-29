@@ -1,0 +1,114 @@
+{
+  "artifact_contract": {
+    "archetypes_parquet": "artifacts/archetypes.parquet",
+    "demo_sessions_parquet": "artifacts/demo_sessions.parquet",
+    "demo_users_parquet": "artifacts/demo_users.parquet",
+    "feature_columns_json": "artifacts/feature_columns.json",
+    "id_to_token_json": "artifacts/id_to_token.json",
+    "manifest_json": "artifacts/manifest.json",
+    "sasrec_model_pt": "artifacts/sasrec_model.pt",
+    "sequence_config_json": "artifacts/sequence_config.json",
+    "sequence_metrics_json": "artifacts/sequence_metrics.json",
+    "token_to_id_json": "artifacts/token_to_id.json",
+    "transition_lift_parquet": "artifacts/transition_lift.parquet",
+    "user_feature_table_parquet": "artifacts/intermediate/user_feature_table.parquet",
+    "xgb_cv_metrics_json": "artifacts/xgb_cv_metrics.json",
+    "xgb_explainer_fold_json": "artifacts/xgb_explainer_fold.json",
+    "xgb_feature_importance_csv": "artifacts/xgb_feature_importance.csv",
+    "xgb_fold_models": [
+      "artifacts/xgb_fold_0.json",
+      "artifacts/xgb_fold_1.json",
+      "artifacts/xgb_fold_2.json",
+      "artifacts/xgb_fold_3.json",
+      "artifacts/xgb_fold_4.json"
+    ],
+    "xgb_oof_predictions_parquet": "artifacts/xgb_oof_predictions.parquet"
+  },
+  "bootstrap": {
+    "model_config_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/model_config.json",
+    "runtime": {
+      "optional_package_status": {
+        "boto3": false,
+        "sagemaker": false,
+        "shap": false
+      },
+      "package_versions": {
+        "numpy": "2.4.2",
+        "pandas": "2.3.3",
+        "pyarrow": "23.0.0",
+        "sklearn": "1.8.0",
+        "streamlit": "1.54.0",
+        "torch": "2.10.0",
+        "xgboost": "3.2.0"
+      },
+      "prefer_gpu": true,
+      "shap_available": false,
+      "shap_enabled": false,
+      "torch_available": true,
+      "torch_cuda_available": false,
+      "training_mode": "local"
+    }
+  },
+  "evaluation_and_insights": {
+    "archetypes_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/archetypes.parquet",
+    "demo_sessions_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/demo_sessions.parquet",
+    "demo_users_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/demo_users.parquet",
+    "global_feature_drivers_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/reports/top_global_feature_drivers.csv",
+    "holdout_metrics_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/reports/holdout_metrics.json",
+    "top_successful_paths_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/top_successful_paths.parquet",
+    "transition_lift_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/transition_lift.parquet"
+  },
+  "local_preprocessing": {
+    "events_enriched_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/intermediate/events_enriched.parquet",
+    "holdout_user_table_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/intermediate/holdout_user_table.parquet",
+    "train_user_table_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/intermediate/train_user_table.parquet",
+    "user_feature_table_path": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts/intermediate/user_feature_table.parquet"
+  },
+  "local_sasrec": {
+    "artifact_dir": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts",
+    "device": "cpu",
+    "reused_existing_artifacts": true,
+    "training_mode": "local",
+    "vocab_size": 112
+  },
+  "local_xgb": {
+    "artifact_dir": "/Users/ayushkumar/Desktop/Zerve Hackathon/artifacts",
+    "device": "cpu",
+    "fold_count": 5,
+    "reused_existing_artifacts": true,
+    "training_mode": "local"
+  },
+  "project": {
+    "dataset_path": "zerve_hackathon_for_reviewc8fa7c7.csv",
+    "generated_at_utc": "2026-03-28T23:02:02.996567+00:00",
+    "project_root": "/Users/ayushkumar/Desktop/Zerve Hackathon",
+    "run_id": "zerve_hackathon_v1"
+  },
+  "run_context": {
+    "num_workers": 0,
+    "prefer_gpu": true,
+    "runtime": {
+      "optional_package_status": {
+        "boto3": false,
+        "sagemaker": false,
+        "shap": false
+      },
+      "package_versions": {
+        "numpy": "2.4.2",
+        "pandas": "2.3.3",
+        "pyarrow": "23.0.0",
+        "sklearn": "1.8.0",
+        "streamlit": "1.54.0",
+        "torch": "2.10.0",
+        "xgboost": "3.2.0"
+      },
+      "prefer_gpu": true,
+      "shap_available": false,
+      "shap_enabled": false,
+      "torch_available": true,
+      "torch_cuda_available": false,
+      "training_mode": "local"
+    },
+    "training_mode": "local"
+  }
+}
